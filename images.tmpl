@@ -1,0 +1,27 @@
+<html>
+<head>
+  <style>
+  .main {
+    width: 100%;
+    border: 3px solid #73AD21;
+  }
+  .img {
+
+    width: 300px;
+    height: 500px;
+    float: left;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+<h3>coffe</h3>
+<div class="main" >
+  {{ range $img := dir "img" }}
+    <div class="img"> <img src="img/{{$img}}" width=300px /> </div>
+  {{ end }}
+</div>
+</body>
+</html>
